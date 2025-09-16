@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* Tailwind direktifleri */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global stiller */
+* {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  cursor: none;
+}
+
+/* Özel renkler: tailwind.config.js içinde tanımlamak daha doğru */
+:root {
+  /* --color-primary: #5044E5; */
+  --color-primary: #0f2f6a;
+  --color-light-bg: #fdf4db;
+}
+
+body {
+  @apply bg-[var(--color-light-bg)] text-gray-900;
+}
+
+.dark body {
+  @apply bg-gray-900 text-white;
+}
